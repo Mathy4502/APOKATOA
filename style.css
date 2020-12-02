@@ -6,11 +6,7 @@
 }
 
 body {
-<<<<<<< HEAD
-  font-family: "Poppins", sans-serif;
-=======
   font-family: "electrolize", sans-serif;
->>>>>>> dev
   font-size: 15px;
   font-weight: normal;
   color: hsl(0, 0%, 90%);
@@ -185,7 +181,7 @@ body {
   color: #fff;
   transition: all 0.35s;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 40px;
 }
 
@@ -254,7 +250,7 @@ body {
 .hero-content .entry-header .entry-meta-date {
   position: absolute;
   width: 100%;
-  top: 20px;
+  top: 0px;
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 500;
@@ -268,7 +264,6 @@ body {
   }
 
   .hero-content .entry-header .entry-meta-date {
-    top: 60px;
   }
 }
 
@@ -323,6 +318,7 @@ body {
 .hero-content .entry-footer .current {
   background: #fdf74d;
   color: hsl(0, 0%, 0%);
+  box-shadow: 50px 40px 115px rgba(0, 0, 0, 0.1);
 }
 
 /*------------------------------------------------------------
@@ -365,7 +361,7 @@ body {
   width: 100%;
   font-size: 48px;
   font-weight: 600;
-  color: hsl(0, 0%, 0%);
+  color: #120136;
 }
 
 /*------------------------------------------------------------
@@ -387,6 +383,7 @@ body {
 .lineup-artists .featured-image img {
   width: 100%;
   max-width: 100%;
+  border-radius: 20px;
 }
 
 /*------------------------------------------------------------
@@ -449,6 +446,7 @@ body {
     top: 100px;
     left: -75px;
     width: calc(100% + 75px);
+    border-radius: 20px;
   }
 
   .lineup-artists
@@ -600,16 +598,17 @@ body {
 
 .see-complete-lineup .entry-footer .btn {
   padding: 15px 35px;
-  border-radius: 0;
+  border-radius: 50px;
   margin-right: 20px;
-  background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+  background: #fdf74d;
   font-weight: 500;
 }
 
 .see-complete-lineup .entry-footer a {
   font-size: 14px;
   font-weight: 600;
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+  box-shadow: 50px 40px 115px rgba(0, 0, 0, 0.1);
 }
 
 /*------------------------------------------------------------
