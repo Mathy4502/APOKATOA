@@ -6,17 +6,10 @@
 }
 
 body {
-<<<<<<< HEAD
-    font-family: 'electrolize', sans-serif;
-    font-size: 15px;
-    font-weight: normal;
-    color: hsl(0, 0%, 90%);
-=======
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: normal;
   color: hsl(0, 0%, 90%);
->>>>>>> f744ebe4149e43a6bcbc35789047737d38ccebe6
 }
 
 @font-face {
@@ -245,15 +238,6 @@ body {
 }
 
 .hero-content .entry-header h2 {
-<<<<<<< HEAD
-    padding: 50px;
-    margin: 0;
-    font-family: electrolize;
-    font-size:120px;
-    background: #40BAD5;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-=======
   padding: 50px;
   margin: 0;
   font-family: mountains;
@@ -261,7 +245,6 @@ body {
   background: -webkit-linear-gradient(#00d0ff, #25ffbf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
->>>>>>> f744ebe4149e43a6bcbc35789047737d38ccebe6
 }
 
 .hero-content .entry-header .entry-meta-date {
@@ -324,19 +307,6 @@ body {
 }
 
 .hero-content .entry-footer .btn {
-<<<<<<< HEAD
-    background: hsl(0, 0%, 100%);
-    padding: 16px 40px;
-    border-radius: 50px;
-    margin-right: 20px;
-    color: hsl(0, 0%, 17%);
-    font-weight: 600;
-}
-
-.hero-content .entry-footer a:hover, .hero-content .entry-footer .current {
-    background: #FDF74D;
-    color: hsl(0, 0%, 0%);
-=======
   background: hsl(0, 0%, 100%);
   padding: 16px 40px;
   border-radius: 0;
@@ -349,7 +319,6 @@ body {
 .hero-content .entry-footer .current {
   background: -webkit-linear-gradient(#00d0ff, #25ffbf);
   color: hsl(0, 0%, 0%);
->>>>>>> f744ebe4149e43a6bcbc35789047737d38ccebe6
 }
 
 /*------------------------------------------------------------
