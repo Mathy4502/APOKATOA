@@ -6,7 +6,11 @@
 }
 
 body {
+<<<<<<< HEAD
   font-family: "Poppins", sans-serif;
+=======
+  font-family: "electrolize", sans-serif;
+>>>>>>> dev
   font-size: 15px;
   font-weight: normal;
   color: hsl(0, 0%, 90%);
@@ -240,9 +244,9 @@ body {
 .hero-content .entry-header h2 {
   padding: 50px;
   margin: 0;
-  font-family: mountains;
+  font-family: electrolize;
   font-size: 120px;
-  background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+  background: #40bad5;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -309,7 +313,7 @@ body {
 .hero-content .entry-footer .btn {
   background: hsl(0, 0%, 100%);
   padding: 16px 40px;
-  border-radius: 0;
+  border-radius: 50px;
   margin-right: 20px;
   color: hsl(0, 0%, 17%);
   font-weight: 600;
@@ -317,7 +321,7 @@ body {
 
 .hero-content .entry-footer a:hover,
 .hero-content .entry-footer .current {
-  background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+  background: #fdf74d;
   color: hsl(0, 0%, 0%);
 }
 
