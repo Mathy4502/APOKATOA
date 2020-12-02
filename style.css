@@ -6,10 +6,10 @@
 }
 
 body {
-    font-family: 'electrolize', sans-serif;
-    font-size: 15px;
-    font-weight: normal;
-    color: hsl(0, 0%, 90%);
+  font-family: "electrolize", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: hsl(0, 0%, 90%);
 }
 
 @font-face {
@@ -238,13 +238,13 @@ body {
 }
 
 .hero-content .entry-header h2 {
-    padding: 50px;
-    margin: 0;
-    font-family: electrolize;
-    font-size:120px;
-    background: #40BAD5;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  padding: 50px;
+  margin: 0;
+  font-family: electrolize;
+  font-size: 120px;
+  background: #40bad5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-content .entry-header .entry-meta-date {
@@ -307,17 +307,18 @@ body {
 }
 
 .hero-content .entry-footer .btn {
-    background: hsl(0, 0%, 100%);
-    padding: 16px 40px;
-    border-radius: 50px;
-    margin-right: 20px;
-    color: hsl(0, 0%, 17%);
-    font-weight: 600;
+  background: hsl(0, 0%, 100%);
+  padding: 16px 40px;
+  border-radius: 50px;
+  margin-right: 20px;
+  color: hsl(0, 0%, 17%);
+  font-weight: 600;
 }
 
-.hero-content .entry-footer a:hover, .hero-content .entry-footer .current {
-    background: #FDF74D;
-    color: hsl(0, 0%, 0%);
+.hero-content .entry-footer a:hover,
+.hero-content .entry-footer .current {
+  background: #fdf74d;
+  color: hsl(0, 0%, 0%);
 }
 
 /*------------------------------------------------------------
@@ -831,7 +832,7 @@ body {
 }
 
 .site-footer .footer-cover-title h2 {
-  font-size: 20vw;
+  font-size: 200px;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 0;
