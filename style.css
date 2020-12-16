@@ -94,7 +94,7 @@ body {
   position: absolute;
   height: 2px;
   width: 100%;
-  background: #fff;
+  background: black;
   border-radius: 10px;
   opacity: 1;
   left: 0;
@@ -244,7 +244,7 @@ body {
   background: black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-text-shadow: 4px 4px 21px rgba(128, 132, 139, 0.9);
+  text-shadow: 4px 4px 21px rgba(128, 132, 139, 0.9);
 }
 
 #fest {
@@ -262,7 +262,7 @@ text-shadow: 4px 4px 21px rgba(128, 132, 139, 0.9);
   font-weight: 500;
   /*color: hsl(0, 0%, 90%);*/
   text-align: center;
-text-shadow: 4px 4px 21px rgba(128, 132, 139, 0.9);
+  text-shadow: 4px 4px 21px rgba(128, 132, 139, 0.9);
 }
 
 /*
