@@ -250,10 +250,15 @@ body {
 #fest {
   font-family: "Raleway", sans-serif;
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: 2vw;
 =======
   font-size: 2.75vw;
 >>>>>>> 8916cdc44661fd227d3c9b02177f6bdcec078d56
+=======
+  font-size: 2.75vw;
+  font-size: 2vw;
+>>>>>>> db2d3be52009969f2823cedd88db8f0fa56f7d33
   font-style: italic;
 }
 
@@ -856,10 +861,17 @@ body {
 
 .site-footer .footer-cover-title h2 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: 40px;
 =======
   font-size: ;
 >>>>>>> 8916cdc44661fd227d3c9b02177f6bdcec078d56
+=======
+  font-size: ;
+=======
+  font-size: 40px;
+>>>>>>> f31088e2d7f68f45ebd944e5c27db169c6ecc539
+>>>>>>> db2d3be52009969f2823cedd88db8f0fa56f7d33
   font-weight: 700;
   line-height: 1;
   margin-bottom: 0;
