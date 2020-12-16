@@ -240,7 +240,7 @@ body {
   padding: 50px;
   margin: 0;
   font-family: "Raleway", sans-serif;
-  font-size: 120px;
+  font-size: 8vw;
   background: black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -249,7 +249,7 @@ body {
 
 #fest {
   font-family: "Raleway", sans-serif;
-  font-size: 40px;
+  font-size: 2.75vw;
   font-style: italic;
 }
 
@@ -313,13 +313,21 @@ body {
   text-align: center;
 }
 
+.hero-content .entry-footer .btn:first-of-type {
+  margin-right: 10px;
+}
+
+.hero-content .entry-footer .btn:last-of-type {
+  margin-left: 10px;
+}
+
 .hero-content .entry-footer .btn {
   background: hsl(0, 0%, 100%);
   padding: 16px 40px;
   border-radius: 50px;
-  margin-right: 20px;
   color: hsl(0, 0%, 17%);
   font-weight: 600;
+  width: 200px;
 }
 
 .hero-content .entry-footer a:hover,
@@ -843,7 +851,7 @@ body {
 }
 
 .site-footer .footer-cover-title h2 {
-  font-size: 200px;
+  font-size: ;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 0;
