@@ -249,7 +249,11 @@ body {
 
 #fest {
   font-family: "Raleway", sans-serif;
+<<<<<<< HEAD
   font-size: 2vw;
+=======
+  font-size: 2.75vw;
+>>>>>>> 8916cdc44661fd227d3c9b02177f6bdcec078d56
   font-style: italic;
 }
 
@@ -313,13 +317,21 @@ body {
   text-align: center;
 }
 
+.hero-content .entry-footer .btn:first-of-type {
+  margin-right: 10px;
+}
+
+.hero-content .entry-footer .btn:last-of-type {
+  margin-left: 10px;
+}
+
 .hero-content .entry-footer .btn {
   background: hsl(0, 0%, 100%);
   padding: 16px 40px;
   border-radius: 50px;
-  margin-right: 20px;
   color: hsl(0, 0%, 17%);
   font-weight: 600;
+  width: 200px;
 }
 
 .hero-content .entry-footer a:hover,
@@ -843,7 +855,11 @@ body {
 }
 
 .site-footer .footer-cover-title h2 {
+<<<<<<< HEAD
   font-size: 40px;
+=======
+  font-size: ;
+>>>>>>> 8916cdc44661fd227d3c9b02177f6bdcec078d56
   font-weight: 700;
   line-height: 1;
   margin-bottom: 0;
