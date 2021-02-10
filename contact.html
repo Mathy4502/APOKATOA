@@ -29,49 +29,52 @@
 
   <body class="contact-page">
     <header class="site-header">
-      <div class="header-bar">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-10 col-lg-4">
-              <h1 class="site-branding flex">
-                <a href="index.html"
-                  ><img
-                    src="images\Logo.png"
-                    width="65"
-                    height="65"
-                    class="d-inline-block align-top"
-                    alt=""
-                /></a>
-              </h1>
-            </div>
-
-            <div class="col-2 col-lg-8">
-              <nav class="site-navigation">
-                <div class="hamburger-menu d-lg-none">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <!-- .hamburger-menu -->
-
-                <ul>
-                  <li><a href="index.html">Accueil</a></li>
-                  <li><a href="programmation.html">Programmation</a></li>
-                  <li><a href="#">Boutique</a></li>
-                  <li><a href="about-us.html">À propos</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <!-- flex -->
-              </nav>
-              <!-- .site-navigation -->
-            </div>
-            <!-- .col-12 -->
+      <nav class="nav">
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"
+              ><img
+                src="images\Logo.png"
+                width="65"
+                height="65"
+                class="d-inline-block align-top"
+                alt=""
+            /></a>
           </div>
-          <!-- .row -->
+          <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="programmation.html">Programmation</a></li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Le Festival
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li><a href="about-us.html">À propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
         </div>
-        <!-- container-fluid -->
-      </div>
+      </nav>
       <!-- header-bar -->
     </header>
     <!-- .site-header -->

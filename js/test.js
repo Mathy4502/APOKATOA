@@ -731,6 +731,16 @@ var $jscomp$this = this;
   };
   return n;
 });
+
+/*NavTrigger*/
+
+$(".navTrigger").click(function () {
+  $(this).toggleClass("active");
+  console.log("Clicked menu");
+  $("#mainListDiv").toggleClass("show_list");
+  $("#mainListDiv").fadeIn();
+});
+
 /*
 anime
   .timeline({ loop: true })

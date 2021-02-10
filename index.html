@@ -10,6 +10,15 @@
 
     <title>Apokatoa Festival</title>
 
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
@@ -30,57 +39,52 @@
 
   <body>
     <header class="site-header">
-      <div class="header-bar">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-10 col-lg-4">
-              <h1 class="site-branding flex">
-                <a href="index.html"
-                  ><img
-                    src="images\Logo.png"
-                    width="65"
-                    height="65"
-                    class="d-inline-block align-top"
-                    alt=""
-                /></a>
-              </h1>
-            </div>
-
-            <div class="col-2 col-lg-8">
-              <nav class="site-navigation">
-                <div class="hamburger-menu d-lg-none">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <!-- .hamburger-menu -->
-
-                <ul>
-                  <li><a href="index.html">Accueil</a></li>
-                  <li><a href="programmation.html">Programmation</a></li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                  </li>                  
-                  <li><a href="#">Boutique</a></li>
-                  <li><a href="about-us.html">À propos</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <!-- flex -->
-              </nav>
-              <!-- .site-navigation -->
-            </div>
-            <!-- .col-12 -->
+      <nav class="nav">
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"
+              ><img
+                src="images\Logo.png"
+                width="65"
+                height="65"
+                class="d-inline-block align-top"
+                alt=""
+            /></a>
           </div>
-          <!-- .row -->
+          <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="programmation.html">Programmation</a></li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Le Festival
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li><a href="about-us.html">À propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
         </div>
-        <!-- container-fluid -->
-      </div>
+      </nav>
       <!-- header-bar -->
     </header>
     <!-- .site-header -->
@@ -441,6 +445,7 @@
       <!-- footer-content-wrapper -->
     </footer>
     <!-- site-footer -->
+
     <script type="text/javascript" src="js/test.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
