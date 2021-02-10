@@ -49,6 +49,7 @@ html {
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
+  margin-top: 0;
 }
 @-ms-viewport {
   width: device-width;
