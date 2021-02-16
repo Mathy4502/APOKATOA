@@ -28,11 +28,7 @@ body {
 # site-header
 ------------------------------------------------------------*/
 .home-page {
-<<<<<<< HEAD
-  background: url(../../images/middle-cover.jpg) no-repeat;
-=======
-  background: url(images/middle-cover.jpg) no-repeat;
->>>>>>> dev
+  background: url(../images/middle-cover.jpg) no-repeat;
 }
 
 .site-header {
@@ -447,13 +443,7 @@ body {
 #fest {
   font-family: "Raleway", sans-serif;
   font-size: 2vw;
-<<<<<<< HEAD
   font-size: 2.75vw;
-=======
-  font-size: 2.75vw;
-  font-size: 2.75vw;
-  font-size: 2vw;
->>>>>>> dev
   font-style: italic;
 }
 
@@ -543,13 +533,8 @@ body {
 # site-header
 ------------------------------------------------------------*/
 
-<<<<<<< HEAD
 .programmation-page{
   background: url("../images/contact-background-image.jpg") no-repeat;
-=======
-.programmation-page {
-  background: url("images/contact-background-image.jpg") no-repeat;
->>>>>>> dev
 }
 
 .programmation-page .page-header {
