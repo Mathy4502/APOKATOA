@@ -26,7 +26,7 @@ app.get("/programmation", (req, res) => {
   return res.render("programmation.ejs");
 });
 
-app.get("/billeterie", (req, res) => {
+app.get("/ticket", (req, res) => {
   return res.render("ticket.ejs");
 });
 
