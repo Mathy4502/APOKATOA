@@ -33,7 +33,7 @@ body {
 # site-header
 ------------------------------------------------------------*/
 .home-page {
-  background: url(images/middle-cover.jpg) no-repeat;
+  background: url(public/images/middle-cover.jpg) no-repeat;
 }
 
 .site-header {
