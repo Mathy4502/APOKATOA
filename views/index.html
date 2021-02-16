@@ -10,77 +10,81 @@
 
     <title>Apokatoa Festival</title>
 
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
       rel="stylesheet"
     />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css" />
 
     <!-- FontAwesome CSS -->
-    <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="/public/css/fontawesome-all.min.css" />
 
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="/public/css/swiper.min.css" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/public/css/style.css" />
   </head>
 
   <body>
     <header class="site-header">
-      <div class="header-bar">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-10 col-lg-4">
-              <h1 class="site-branding flex">
-                <a href="index.html"
-                  ><img
-                    src="images\Logo.png"
-                    width="65"
-                    height="65"
-                    class="d-inline-block align-top"
-                    alt=""
-                /></a>
-              </h1>
-            </div>
-
-            <div class="col-2 col-lg-8">
-              <nav class="site-navigation">
-                <div class="hamburger-menu d-lg-none">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <!-- .hamburger-menu -->
-
-                <ul>
-                  <li><a href="index.html">Accueil</a></li>
-                  <li><a href="programmation.html">Programmation</a></li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                  </li>                  
-                  <li><a href="#">Boutique</a></li>
-                  <li><a href="about-us.html">À propos</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <!-- flex -->
-              </nav>
-              <!-- .site-navigation -->
-            </div>
-            <!-- .col-12 -->
+      <nav class="nav">
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"
+              ><img
+                src="/public/images\Logo.png"
+                width="65"
+                height="65"
+                class="d-inline-block align-top"
+                alt=""
+            /></a>
           </div>
-          <!-- .row -->
+          <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="programmation.html">Programmation</a></li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Le Festival
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Venir à APOKATOA Fest</a>
+                  <a class="dropdown-item" href="#">Hébergement</a>
+                  <a class="dropdown-item" href="#">Plan du site</a>
+                  <a class="dropdown-item" href="#">Prévention</a>
+                </div>
+              </li>
+              <li><a href="about-us.html">À propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
         </div>
-        <!-- container-fluid -->
-      </div>
+      </nav>
       <!-- header-bar -->
     </header>
     <!-- .site-header -->
@@ -411,22 +415,10 @@
               <div class="footer-social">
                 <ul class="flex justify-content-center align-items-center">
                   <li>
-                    <a href="#"><i class="fab fa-pinterest"></i></a>
-                  </li>
-                  <li>
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                   </li>
                   <li>
                     <a href="#"><i class="fab fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fab fa-dribbble"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fab fa-behance"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
                   </li>
                 </ul>
               </div>
@@ -441,15 +433,28 @@
       <!-- footer-content-wrapper -->
     </footer>
     <!-- site-footer -->
-    <script type="text/javascript" src="js/test.js"></script>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
-    <script type="text/javascript" src="js/jquery.collapsible.min.js"></script>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
+
+    <script type="text/javascript" src="/public/js/test.js"></script>
+    <script type="text/javascript" src="/public/js/jquery.js"></script>
+    <script
+      type="text/javascript"
+      src="/public/js/masonry.pkgd.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/public/js/jquery.collapsible.min.js"
+    ></script>
+    <script type="text/javascript" src="/public/js/swiper.min.js"></script>
     <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
-    <script type="text/javascript" src="js/circle-progress.min.js"></script>
-    <script type="text/javascript" src="js/jquery.countTo.min.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+    <script
+      type="text/javascript"
+      src="/public/js/circle-progress.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/public/js/jquery.countTo.min.js"
+    ></script>
+    <script type="text/javascript" src="/public/js/custom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   </body>
 </html>
