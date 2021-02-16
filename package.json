@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Mathy4502/APOKATOA#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1"
   }
 }
