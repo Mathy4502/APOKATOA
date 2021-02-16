@@ -15,27 +15,20 @@ app.get('/', (req, res) => {
     return res.render('index.ejs');
 });
 
-app.get('/', (req, res) => {
+app.get('/about-us', (req, res) => {
     return res.render('about-us.ejs');
 });
 
-app.get('/', (req, res) => {
-    return res.render('blog.ejs');
-});
-
-app.get('/', (req, res) => {
+app.get('/contact', (req, res) => {
     return res.render('contact.ejs');
 });
 
-app.get('/', (req, res) => {
-    return res.render('elements.ejs');
-});
 
-app.get('/', (req, res) => {
+app.get('/programmation', (req, res) => {
     return res.render('programmation.ejs');
 });
 
-app.get('/', (req, res) => {
+app.get('/billeterie', (req, res) => {
     return res.render('ticket.ejs');
 });
 
