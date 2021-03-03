@@ -33,5 +33,8 @@ app.get("/ticket", (req, res) => {
 app.get("/trajet", (req, res) => {
   return res.render("trajet.ejs");
 });
+app.get("/hebergement", (req, res) => {
+  return res.render("hebergement.ejs");
+});
 
 app.listen(3000);

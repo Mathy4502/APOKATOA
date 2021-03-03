@@ -1,0 +1,32 @@
+.main-content {
+  margin: 0px 0;
+}
+
+.page-header {
+  min-height: 420px;
+  padding-top: 150px;
+  background: url(../images/middle-cover.jpg) no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+.about-us .main-content .entry-content .entry-description p {
+  margin: 0 !important;
+  padding: 0;
+  margin-top: 25px !important;
+  font-size: 15px;
+  font-weight: 300;
+  color: #989898;
+  line-height: 2;
+  hyphens: auto;
+}
+
+.about-us .main-content .featured-image img {
+  max-width: 90%;
+  vertical-align: middle;
+  padding-bottom: 15px;
+}
+
+.about-us .main-content .featured-image {
+  margin-top: 30px;
+}
