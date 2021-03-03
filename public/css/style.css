@@ -533,7 +533,7 @@ body {
 # site-header
 ------------------------------------------------------------*/
 
-.programmation-page{
+.programmation-page {
   background: url("../images/contact-background-image.jpg") no-repeat;
 }
 
@@ -1040,7 +1040,7 @@ ul.navlinks li {
 .site-footer {
   position: relative;
   padding: 40px 0 30px;
-  background: url(../images/footer-cover.jpg) no-repeat;
+  background: url(../images/footer.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -1050,7 +1050,7 @@ ul.navlinks li {
   height: 100%;
   width: 100%;
   z-index: 3;
-  background: hsla(0, 0%, 5%, 0.7);
+  background: hsla(0, 0%, 0%, 0.3);
   top: 0;
   left: 0;
 }
@@ -1109,7 +1109,7 @@ ul.navlinks li {
 }
 
 .footer-content-wrapper .entry-mail {
-  margin-top: 16px;
+  margin-top: 45px;
   font-size: 16px;
   font-weight: 700;
   color: hsl(0, 0%, 100%);
@@ -1266,7 +1266,6 @@ ul.navlinks li {
   font-weight: 300;
   color: #989898;
   line-height: 2;
-  word-break: break-all;
   hyphens: auto;
 }
 
