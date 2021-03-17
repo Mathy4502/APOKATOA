@@ -20,7 +20,12 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "foreman": "^3.0.1",
     "pkg": "^4.4.9"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "engines": {
+    "node": "12.14.0",
+    "npm": "6.13.4"
+  }
 }
