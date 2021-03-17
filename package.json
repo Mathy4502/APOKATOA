@@ -19,7 +19,11 @@
   "homepage": "https://github.com/Mathy4502/APOKATOA#readme",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pkg": "^4.4.9"
+  },
+  "engines": {
+    "node": "12.14.0"
   },
   "devDependencies": {}
 }
