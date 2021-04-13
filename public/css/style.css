@@ -28,6 +28,11 @@ body {
   src: url(../fonts/Poppins/Poppins-Bold.ttf);
 }
 
+@font-face {
+  font-family: "Eksell";
+  src: url(../fonts/EksellDisplayLarge.otf);
+ }
+
 /*------------------------------------------------------------
 # site-header
 ------------------------------------------------------------*/
@@ -125,7 +130,17 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.nav div.main_list ul li.dropdown.open a.nav-link{
+  background-color: transparent;
+  color: #F5BA33;
+}
+.nav div.main_list ul li div.dropdown-menu {
+  background-color: #171717;
+}
+.nav div.main_list ul li div.dropdown-menu a:hover{
+  background-color: #E54432;
+  color: #FFFFFF;
+}
 .nav div.main_list ul li {
   width: auto;
   height: 65px;
@@ -152,7 +167,7 @@ body {
 
 
 .nav div.main_list ul li a:hover {
-  color: #ff6b1c;
+  color: #F5BA33;
 }
 
 /* Home section */
@@ -773,11 +788,13 @@ ul.navlinks li {
 # The Lineup Artists - Headliners
 ------------------------------------------------------------*/
 .content-section {
-  min-height: 3000px;
+  position: relative;
+  height: max-content;
   width: 100%;
   padding-bottom: 0px;
-  background: url("../images/fond.jpg") no-repeat;
-  background-size: 100% auto;
+  background-size: 100% !important;
+  background: linear-gradient(to top, rgba(255,255,255,0) 85%,
+  rgb(0 0 0 / 63%)), url("../images/fond.png") no-repeat;
 }
 
 .content-section .middle-cover {
@@ -794,7 +811,7 @@ ul.navlinks li {
 ## lineup-artists-headline
 ------------------------------------------------------------*/
 .lineup-artists-headline {
-  margin-top: 115px;
+  margin-top: 200px;
 }
 
 .lineup-artists-headline .entry-title p {
@@ -807,16 +824,17 @@ ul.navlinks li {
 
 .lineup-artists-headline .entry-title h2 {
   width: 100%;
-  font-size: 48px;
-  font-weight: 600;
-  color: #120136;
+  font-size: 80px;
+  color: #1b1b1b;
+  font-family: "Eksell";
 }
 
 /*------------------------------------------------------------
 ## lineup-artists
 ------------------------------------------------------------*/
+
 .lineup-artists {
-  padding-top: 80px;
+  padding-top: 20px;
 }
 
 .lineup-artists .featured-image {
@@ -826,6 +844,7 @@ ul.navlinks li {
 
 .lineup-artists .featured-image {
   width: 100%;
+  z-index: 110;
 }
 
 .lineup-artists .featured-image img {
@@ -837,6 +856,43 @@ ul.navlinks li {
 /*------------------------------------------------------------
 ### lineup-artists-wrap
 ------------------------------------------------------------*/
+.genre-music {
+  position: absolute;
+  width: max-content;
+  top: 75px;
+  left: 20px;
+}
+.genre-music svg{
+  width: 110px;
+  height: auto;
+}
+.genre-music p{
+  position: absolute;
+  margin: auto !important;
+  left: 40px;
+  right: 0px;
+  top: 44px;
+  bottom: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #FFFFFF;
+  font-family: poppins-bold;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.music-app a {
+  cursor: pointer;
+  transition: ease-in-out all 0.2s;
+}
+.music-app a:hover {
+  transform: scale(1.2);
+}
+.music-app a svg {
+  width: 26px;
+  height: 26px;
+}
+
 .lineup-artists .lineup-artists-wrap {
   margin-top: 80px;
 }
@@ -857,6 +913,9 @@ ul.navlinks li {
   font-size: 30px;
   font-weight: 600;
   color: hsl(0, 0%, 9%);
+  font-family: poppins-bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .lineup-artists-description .entry-content {
@@ -891,16 +950,16 @@ ul.navlinks li {
   .lineup-artists .lineup-artists-wrap .lineup-artists-description-container {
     position: absolute;
     z-index: 99;
-    top: 100px;
-    left: -75px;
-    width: calc(100% + 75px);
+    top: 15px;
+    left: -15px;
+    width: calc(100% + 15px);
     border-radius: 20px;
   }
 
   .lineup-artists
     .lineup-artists-wrap:nth-of-type(even)
     .lineup-artists-description-container {
-    right: -75px;
+    right: -15px;
     left: auto;
   }
 
