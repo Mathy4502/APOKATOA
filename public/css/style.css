@@ -794,7 +794,8 @@ ul.navlinks li {
   padding-bottom: 0px;
   background-size: 100% !important;
   background: linear-gradient(to top, rgba(255,255,255,0) 85%,
-  rgb(0 0 0 / 63%)), url("../images/fond.png") no-repeat;
+  rgb(0 0 0 / 63%)), url("../images/fond.png") no-repeat, 
+  linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%);
 }
 
 .content-section .middle-cover {
@@ -1102,20 +1103,25 @@ ul.navlinks li {
 .see-complete-lineup {
   margin-top: 105px;
 }
-
-.see-complete-lineup .entry-footer .btn {
-  padding: 15px 35px;
-  border-radius: 50px;
-  margin-right: 20px;
-  background: #fdf74d;
-  font-weight: 500;
+.see-complete-lineup .entry-footer a.btn {
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.see-complete-lineup .entry-footer a {
-  font-size: 14px;
-  font-weight: 600;
-  color: hsl(0, 0%, 0%);
-  box-shadow: 50px 40px 115px rgba(0, 0, 0, 0.1);
+.see-complete-lineup .entry-footer a.btn p {
+  color: black;
+  font-family: poppins-bold;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
 }
 
 /*------------------------------------------------------------
@@ -1223,7 +1229,8 @@ ul.navlinks li {
 # home-page-last-news
 ------------------------------------------------------------*/
 .home-page-last-news {
-  margin-top: 220px;
+  margin-top: 80px;
+  padding-bottom: 120px;
 }
 
 .home-page-last-news .entry-title p {
@@ -1236,57 +1243,75 @@ ul.navlinks li {
 
 .home-page-last-news .entry-title h2 {
   width: 100%;
-  margin: 0;
-  font-size: 48px;
-  font-weight: 600;
-  color: hsl(0, 0%, 0%);
+  font-size: 80px;
+  color: #1b1b1b;
+  font-family: "Eksell";
 }
 
 /*------------------------------------------------------------
 ## home-page-last-news-wrap
 ------------------------------------------------------------*/
 .home-page-last-news-wrap {
-  margin-top: 110px;
+  margin-top: 80px;
 }
 
 .home-page-last-news-wrap .box-link-date {
   position: absolute;
-  top: 30px;
-  left: 0;
-  padding: 10px 25px;
-  background: -webkit-linear-gradient(#00d0ff, #25ffbf);
-  font-size: 20px;
-  font-weight: 500;
+  top: -70px;
+  left: -50px;
+}
+.home-page-last-news-wrap .box-link-date svg {
+  width: 240px;
+  height: auto;
+  transform: rotate(314deg);  
 }
 
 .home-page-last-news-wrap .box-link-date a {
-  color: hsl(0, 0%, 100%);
-  text-decoration: none;
+  position: absolute;
+  margin: auto !important;
+  left: 55px;
+  right: 0px;
+  top: 110px;
+  bottom: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #FFFFFF;
+  font-family: poppins-bold;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  z-index: 10;
 }
 
 .home-page-last-news-wrap .content-wrapper {
   background: hsl(0, 0%, 100%);
-  box-shadow: 10px 40px 115px 27px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  box-shadow: 50px 40px 115px rgb(0 0 0 / 10%);
 }
 
 .home-page-last-news-wrap .featured-image {
-  margin: 0;
-  padding: 0;
-  box-shadow: 10px 40px 115px 27px rgba(0, 0, 0, 0.1);
+  margin: -40px;
+  padding: 20px;
 }
 
 .home-page-last-news-wrap .featured-image img {
   max-width: 100%;
+  border-radius: 20px;
+}
+.home-page-last-news-wrap .col-md-6{
+  padding: 0 50px;
 }
 
 .home-page-last-news-wrap .entry-content {
-  padding: 35px 45px;
+  padding: 55px 35px 45px;
 }
 
 .home-page-last-news-wrap .entry-content .entry-header h2 {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 600;
   color: hsl(0, 0%, 9%);
+  font-family: poppins-bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .home-page-last-news-wrap .entry-content .entry-header h2 a {
@@ -1321,20 +1346,8 @@ ul.navlinks li {
 ------------------------------------------------------------*/
 .site-footer {
   position: relative;
-  padding: 40px 0 30px;
-  background: url(../images/footer.jpg) no-repeat;
-  background-size: cover;
-}
-
-.site-footer::before {
-  position: absolute;
-  content: " ";
-  height: 100%;
-  width: 100%;
-  z-index: 3;
-  background: hsla(0, 0%, 0%, 0.3);
-  top: 0;
-  left: 0;
+  padding: 30px 0 30px;
+  background-color: #00489d;
 }
 
 .site-footer .footer-cover-title {
@@ -1356,8 +1369,23 @@ ul.navlinks li {
 /*------------------------------------------------------------
 ## .site-footer footer-content-wrapper
 ------------------------------------------------------------*/
+.footer-content-wrapper h2 {
+  font-size: 26px;
+  color: #ffffff;
+  font-family: "Eksell";
+  opacity: 0.5;
+  margin-bottom: 22px;
+}
+.footer-content-wrapper a {
+  text-decoration: none;
+  color: white;
+  line-height: 30px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-family: poppins-bold;
+}
 .footer-content-wrapper {
-  position: absolute;
   width: 100%;
   height: auto;
   z-index: 4;
@@ -1403,9 +1431,11 @@ ul.navlinks li {
 }
 
 .footer-content-wrapper .copyright-info {
-  margin-top: 20px;
-  font-size: 12px;
-  color: hsl(0, 0%, 100%);
+  margin-top: 40px;
+  font-size: 13px;
+  color: #fff;
+  font-weight: bold;
+  opacity: 0.5;
 }
 
 .footer-content-wrapper .footer-social {
@@ -1423,8 +1453,8 @@ ul.navlinks li {
 }
 
 .footer-content-wrapper .footer-social ul a {
-  padding: 5px 16px;
-  font-size: 12px;
+  padding: 4px 18px;
+  font-size: 24px;
   color: hsl(0, 0%, 100%);
 }
 
@@ -1545,7 +1575,6 @@ ul.navlinks li {
   padding: 0;
   margin-top: 25px !important;
   font-size: 15px;
-  font-weight: 300;
   color: #989898;
   line-height: 2;
   hyphens: auto;
