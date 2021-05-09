@@ -137,6 +137,9 @@ body {
 .nav div.main_list ul li div.dropdown-menu {
   background-color: #171717;
 }
+.nav div.main_list ul li div.dropdown-menu.basic {
+  background-color: #FFFFFF;
+}
 .nav div.main_list ul li div.dropdown-menu a:hover{
   background-color: #E54432;
   color: #FFFFFF;
@@ -198,6 +201,38 @@ body {
   z-index: 10;
   -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.entry-header h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: hsl(0, 0%, 9%);
+  font-family: poppins-bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.card-content {
+  border-radius: 20px;
+  box-shadow: 0px 20px 60px rgb(0 0 0 / 10%);
+  padding: 26px;
+  background-color: white;
+}
+
+.card-blob-icon {
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+.card-blob-icon i{
+  position: absolute;
+  color: #FFFFFF;
 }
 
 /**
@@ -770,16 +805,6 @@ body {
 # site-header
 ------------------------------------------------------------*/
 
-.programmation-page {
-  background: url("../images/contact-background-image.jpg") no-repeat;
-}
-
-.programmation-page .page-header {
-  padding: 220px 0;
-  background: url(../images/middle-cover.jpg) no-repeat;
-  background-size: cover;
-}
-
 ul.navlinks li {
   font-size: 1.5rem;
 }
@@ -787,6 +812,10 @@ ul.navlinks li {
 /*------------------------------------------------------------
 # The Lineup Artists - Headliners
 ------------------------------------------------------------*/
+.content-section.basic {
+  background: url(../images/fond.png) no-repeat, linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%);
+}
+
 .content-section {
   position: relative;
   height: max-content;
@@ -826,6 +855,12 @@ ul.navlinks li {
 .lineup-artists-headline .entry-title h2 {
   width: 100%;
   font-size: 80px;
+  color: #1b1b1b;
+  font-family: "Eksell";
+}
+.entry-title h3 {
+  width: 100%;
+  font-size: 50px;
   color: #1b1b1b;
   font-family: "Eksell";
 }
@@ -1043,6 +1078,7 @@ ul.navlinks li {
   max-width: 100%;
   height: auto;
   width: 255px;
+  border-radius: 20px;
 }
 
 .the-complete-lineup-artists .artist-single .featured-image a {
@@ -1349,6 +1385,13 @@ ul.navlinks li {
   padding: 30px 0 30px;
   background-color: #00489d;
 }
+.site-footer.programmation {
+  background-color: #e93f33;
+}
+
+.site-footer.about-us {
+  background-color: #ffc107;;
+}
 
 .site-footer .footer-cover-title {
   min-height: 480px;
@@ -1461,12 +1504,6 @@ ul.navlinks li {
 /*------------------------------------------------------------
 # about-us
 ------------------------------------------------------------*/
-.about-us {
-  background: url("../images/about-us-background.jpg") no-repeat;
-  width: 100%;
-  height: 100%;
-}
-
 /*------------------------------------------------------------
 # site-header
 ------------------------------------------------------------*/
@@ -1484,24 +1521,47 @@ ul.navlinks li {
 ## Page Header
 ------------------------------------------------------------*/
 .page-header {
-  min-height: 520px;
-  padding-top: 280px;
-  background: url(../images/middle-cover.jpg) no-repeat;
-  background-size: cover;
+  padding-top: 200px;
   margin: 0;
-}
-
-.about-us .page-header {
-  /* padding: 220px 0; */
-  background: url(../images/middle-cover.jpg) no-repeat;
-  background-size: cover;
+  border-bottom: none;
 }
 
 .page-header .entry-title {
-  font-size: 4vw;
-  color: black;
   margin: 0;
   padding: 0;
+  font-size: 80px;
+  letter-spacing: 0em;
+  color: #ffc107;
+  font-family: "Eksell";
+  -webkit-animation: 1s tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: 1s tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
 }
 
 .page-header .breadcrumbs {
@@ -1570,10 +1630,24 @@ ul.navlinks li {
   color: #040608;
 }
 
-.entry-description p, .entry-description li {
+.entry-description p{
   margin: 0 !important;
   padding: 0;
   margin-top: 25px !important;
+  font-size: 15px;
+  color: #989898;
+  line-height: 2;
+  hyphens: auto;
+  font-family: "Quicksand", sans-serif;
+}
+
+.entry-description li:first-of-type {
+  margin-top: 25px !important;
+}
+
+.entry-description li {
+  margin: 0 !important;
+  padding: 0;
   font-size: 15px;
   color: #989898;
   line-height: 2;
@@ -2014,6 +2088,13 @@ ul.navlinks li {
 /*------------------------------------------------------------
 # site-header
 ------------------------------------------------------------*/
+
+.site-header.basic div.logo img{
+  filter: invert(1);
+}
+.site-header.basic .nav div.main_list ul li a {
+  color: #000000;
+}
 
 .blog-list-page .single-blog-content {
   display: none;
