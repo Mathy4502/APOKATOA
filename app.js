@@ -37,4 +37,14 @@ app.get("/hebergement", (req, res) => {
   return res.render("hebergement.ejs");
 });
 
+app.get("/food", (req, res) => {
+  return res.render("food.ejs");
+});
+
+app.get("/prevention", (req, res) => {
+  return res.render("prevention.ejs");
+});
+
+
+
 app.listen(3000);
