@@ -33,6 +33,11 @@ body {
   src: url(../fonts/EksellDisplayLarge.otf);
  }
 
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 /*------------------------------------------------------------
 # site-header
 ------------------------------------------------------------*/
@@ -53,6 +58,31 @@ body {
 .site-header figure img {
   max-width: 100%;
 }
+.background-img-header h2.entry-title {
+  z-index: 99;
+}
+.background-img-header {
+  z-index: 9;
+  background-image: url(../images/crowd.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  overflow: hidden;
+}
+.background-img-header:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #0000008f;
+  position: absolute;
+  top: 0;
+  border-radius: 28px;
+} 
 
 /*------------------------------------------------------------
 ## header-bar
@@ -233,6 +263,24 @@ body {
 .card-blob-icon i{
   position: absolute;
   color: #FFFFFF;
+}
+
+.bubbleText svg{
+  width: 350px;
+  height: 350px;
+  transform: rotate(14deg);
+}
+.bubbleText h3{
+  position: absolute;
+  color: white !important;
+  z-index: 99;
+}
+
+.bubbleText {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /**
@@ -1390,7 +1438,15 @@ ul.navlinks li {
 }
 
 .site-footer.about-us {
-  background-color: #ffc107;;
+  background-color: #71DB63;
+}
+
+.site-footer.contact{
+  background-color: #3897DE;
+}
+
+.site-footer.three-menu {
+  background-color: #ffc107;
 }
 
 .site-footer .footer-cover-title {
@@ -1526,6 +1582,12 @@ ul.navlinks li {
   border-bottom: none;
 }
 
+.page-header.about-us {
+  padding-top: 120px;
+  margin: 0;
+  border-bottom: none;
+}
+
 .page-header .entry-title {
   margin: 0;
   padding: 0;
@@ -1639,6 +1701,17 @@ ul.navlinks li {
   line-height: 2;
   hyphens: auto;
   font-family: "Quicksand", sans-serif;
+}
+
+.entry-description-he{
+  padding: 0;
+  font-size: 15px;
+  color: #989898;
+  line-height: 2;
+  hyphens: auto;
+  font-family: "Quicksand", sans-serif;
+  padding-left: 130px;
+  padding-right: 130px;
 }
 
 .entry-description li:first-of-type {
